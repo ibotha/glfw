@@ -4,7 +4,7 @@ project "GLFW"
     
 	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
-​
+
 	files
 	{
         "include/GLFW/glfw3.h",
@@ -23,7 +23,7 @@ project "GLFW"
 		kind "StaticLib"
 		systemversion "latest"
 		staticruntime "On"
-​
+
 		files
 		{
 			"src/cocoa_init.m",
@@ -41,7 +41,7 @@ project "GLFW"
 			"src/vulkan.c",
 			"src/window.c"
 		}
-​
+
 		defines 
 		{ 
 			"__APPLE__",
@@ -66,7 +66,7 @@ project "GLFW"
             "src/egl_context.c",
             "src/osmesa_context.c"
         }
-​
+
 		defines 
 		{ 
             "_GLFW_WIN32",
